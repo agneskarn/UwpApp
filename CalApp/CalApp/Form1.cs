@@ -12,64 +12,141 @@ namespace CalApp
 {
     public partial class Form1 : Form
     {
+        string input = string.Empty;
+        string operand1 = string.Empty;
+        string operand2 = string.Empty;
+        double result = 0.0 ;
+        char operation;
+      
+
         public Form1()
         {
             InitializeComponent();
         }
 
-        private void buttonNum1_Click(object sender, EventArgs e)
+        private void one_Click(object sender, EventArgs e)
         {
-            textBoxDisplay.Text += buttonNum1.Text;
+            this.Display.Text = "";
+            input += "1";
+            this.Display.Text += input;
         }
 
-        private void buttonNum2_Click(object sender, EventArgs e)
+        private void two_Click(object sender, EventArgs e)
         {
-            textBoxDisplay.Text += buttonNum2.Text;
+            this.Display.Text = "";
+            input += "2";
+            this.Display.Text += input;
         }
 
-        private void buttonNum3_Click(object sender, EventArgs e)
+        private void three_Click(object sender, EventArgs e)
         {
-            textBoxDisplay.Text += buttonNum3.Text;
+            this.Display.Text = "";
+            input += "3";
+            this.Display.Text += input;
         }
 
-        private void buttonNum4_Click(object sender, EventArgs e)
+        private void four_Click(object sender, EventArgs e)
         {
-            textBoxDisplay.Text += buttonNum4.Text;
+            this.Display.Text = "";
+            input += "4";
+            this.Display.Text += input;
         }
 
-        private void buttonNum5_Click(object sender, EventArgs e)
+        private void five_Click(object sender, EventArgs e)
         {
-            textBoxDisplay.Text += buttonNum5.Text;
+            this.Display.Text = "";
+            input += "5";
+            this.Display.Text += input;
         }
 
-        private void buttonNum6_Click(object sender, EventArgs e)
+        private void six_Click(object sender, EventArgs e)
         {
-            textBoxDisplay.Text += buttonNum6.Text;
+            this.Display.Text = "";
+            input += "6";
+            this.Display.Text += input;
         }
 
-        private void buttonNum7_Click(object sender, EventArgs e)
+        private void seven_Click(object sender, EventArgs e)
         {
-            textBoxDisplay.Text += buttonNum7.Text;
+            this.Display.Text = "";
+            input += "7";
+            this.Display.Text += input;
         }
 
-        private void buttonNum8_Click(object sender, EventArgs e)
+        private void eight_Click(object sender, EventArgs e)
         {
-            textBoxDisplay.Text += buttonNum8.Text;
+            this.Display.Text = "";
+            input += "8";
+            this.Display.Text += input;
         }
 
-        private void buttonNum9_Click(object sender, EventArgs e)
+        private void nine_Click(object sender, EventArgs e)
         {
-            textBoxDisplay.Text += buttonNum9.Text;
+            this.Display.Text = "";
+            input += "9";
+            this.Display.Text += input;
         }
 
-        private void buttonNum0_Click(object sender, EventArgs e)
+        private void zero_Click(object sender, EventArgs e)
         {
-            textBoxDisplay.Text += buttonNum0.Text;
+            this.Display.Text = "";
+            input += "0";
+            this.Display.Text += input;
         }
 
-        private void buttonDot_Click(object sender, EventArgs e)
+        private void buttonDott_Click(object sender, EventArgs e)
         {
-            textBoxDisplay.Text += buttonNum0.Text;
+            this.Display.Text = "";
+            input += ".";
+            this.Display.Text += input;
         }
+
+        private void buttonnDevide_Click(object sender, EventArgs e)
+        {
+            operand1 = input.Text;
+            operation = '/';
+            input.Text = string.Empty;
+        }
+
+        private void buttonnPlus_Click(object sender, EventArgs e)
+        {
+            operand1 = input.Text;
+            operation = '+';
+            input.Text = string.Empty;
+        }
+
+        private void buttonnMulti_Click(object sender, EventArgs e)
+        {
+            operand1 = input.Text;
+            operation = '*';
+            input.Text = string.Empty;
+        }
+
+        private void buttonnMinus_Click(object sender, EventArgs e)
+        {
+            operand1 = input.Text;
+            operation = '-';
+            input.Text = string.Empty;
+        }
+
+     
+     
+        private void buttonCRL_Click(object sender, EventArgs e)
+        {
+            this.Display.Text = "";
+            this.input = string.Empty;
+            this.operand1 = string.Empty;
+            this.operand2 = string.Empty;
+        }
+
+        private void buttonequalll_Click(object sender, EventArgs e)
+        {
+
+            operand1 = input.Text;
+            operation = '=';
+            input.Text = string.Empty;
+        }
+
+      
     }
 }
